@@ -89,7 +89,7 @@ class TimeLogger(object):
 
         print message
 
-    def record_time_process(self, message, predicted=1):
+    def start_process(self, message, predicted=1):
         """
         Creates a new time alculation process and adds it
         to self.processes
@@ -107,7 +107,7 @@ class TimeLogger(object):
         return process_id
 
 
-    def stop_recording(self, process_id):
+    def stop_process(self, process_id):
         """
         Stops recording the time for a process.
         """
